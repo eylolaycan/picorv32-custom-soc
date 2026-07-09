@@ -1,0 +1,25 @@
+# Simulation
+sim/
+*.vcd
+*.out
+
+# GTKWave
+*.gtkw
+
+# OpenLane
+runs/
+results/
+logs/
+reports/
+issue_reproducible/
+
+# Temporary
+*.log
+*.tmp
+*~
+
+# VS Code
+.vscode/
+
+# Python
+__pycache__/

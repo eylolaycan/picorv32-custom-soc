@@ -1,0 +1,16 @@
+{
+  "DESIGN_NAME": "top_peripherals",
+  "VERILOG_FILES": [
+    "dir::src/gpio.v",
+    "dir::src/timer.v",
+    "dir::src/pwm.v",
+    "dir::src/uart_tx.v",
+    "dir::src/top_peripherals.v"
+  ],
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 10,
+  "FP_CORE_UTIL": 35,
+  "PL_TARGET_DENSITY": 0.45,
+  "FP_SIZING": "absolute",
+  "DIE_AREA": "0 0 300 300"
+}
