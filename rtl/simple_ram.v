@@ -13,6 +13,10 @@ module simple_ram (
     wire [7:0] word_addr;
     assign word_addr = addr[9:2];
 
+    initial begin
+        $readmemh("firmware/main.hex", mem);
+    end
+
     always @(posedge clk) begin
         if (valid) begin
             if (wstrb[0]) mem[word_addr][7:0]   <= wdata[7:0];

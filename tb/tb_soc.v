@@ -29,10 +29,17 @@ module tb_soc;
         resetn = 0;
         gpio_in = 8'hA5;
 
-        #50;
+        #100;
         resetn = 1;
 
-        #500;
+        #2000;
+
+        $display("gpio_out = %h", gpio_out);
+
+        if (gpio_out == 8'h55)
+            $display("TEST PASSED: firmware wrote GPIO_OUT");
+        else
+            $display("TEST FAILED: GPIO_OUT is not 0x55");
 
         $finish;
     end
