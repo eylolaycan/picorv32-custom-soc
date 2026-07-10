@@ -1,25 +1,22 @@
-# Simulation
+# Simulation outputs
 sim/
 *.vcd
 *.out
-
-# GTKWave
 *.gtkw
 
-# OpenLane
+# Firmware build files
+firmware/*.elf
+firmware/*.bin
+firmware/*.hex
+
+# OpenLane generated files
 runs/
 results/
 logs/
-reports/
-issue_reproducible/
-
-# Temporary
-*.log
-*.tmp
-*~
-
-# VS Code
-.vscode/
+tmp/
 
 # Python
 __pycache__/
+
+# Editor
+.vscode/
