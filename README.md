@@ -172,16 +172,16 @@ The generated layout was inspected using both OpenROAD and KLayout.
 
 ## Current Status
 
-- ✔ PicoRV32 integration
-- ✔ Memory-mapped peripheral bus
-- ✔ GPIO
-- ✔ Timer
-- ✔ PWM
-- ✔ UART transmitter
-- ✔ Bare-metal firmware execution
-- ✔ RTL verification
-- ✔ OpenLane implementation
-- ✔ Final GDSII generation
+- [X] PicoRV32 integration
+- [X] Memory-mapped peripheral bus
+- [X] GPIO
+- [X] Timer
+- [X] PWM
+- [X] UART transmitter
+- [X] Bare-metal firmware execution
+- [X] RTL verification
+- [X] OpenLane implementation
+- [X] Final GDSII generation
 
 ---
 
