@@ -1,0 +1,17 @@
+{
+  "DESIGN_NAME": "soc",
+  "VERILOG_FILES": [
+    "dir::src/picorv32.v",
+    "dir::src/simple_ram.v",
+    "dir::src/timer.v",
+    "dir::src/pwm.v",
+    "dir::src/uart_tx.v",
+    "dir::src/soc.v"
+  ],
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 20,
+  "FP_CORE_UTIL": 40,
+  "PL_TARGET_DENSITY": 0.45,
+  "FP_SIZING": "absolute",
+  "DIE_AREA": "0 0 1200 1200"
+}

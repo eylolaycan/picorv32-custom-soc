@@ -20,3 +20,22 @@ __pycache__/
 
 # Editor
 .vscode/
+
+# OpenLane temporary run data
+runs/
+**/runs/
+tmp/
+logs/
+
+# OpenROAD databases and large intermediate files
+*.odb
+*.spef
+*.sdf
+*.guide
+*.rdb
+*.tr
+
+# Editor and system files
+*.swp
+*~
+.DS_Store
