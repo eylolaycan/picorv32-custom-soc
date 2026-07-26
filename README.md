@@ -16,20 +16,13 @@ The complete physical implementation was performed using OpenLane with the SKY13
 
 # System Architecture
 
-The top-level SoC contains three major hard macros:
+## System Architecture Diagram
 
-- PicoRV32 CPU
-- Simple RAM
-- Peripheral Subsystem
+<p align="center">
+  <img src="pictures/diagram.png" width="900">
+</p>
 
-The peripheral subsystem includes:
-
-- GPIO
-- Timer
-- PWM Generator
-- UART Transmitter
-
-All peripherals are accessed through a memory-mapped bus interface.
+The following diagram illustrates the hierarchical organization of the custom SoC. The PicoRV32 processor communicates with the Simple RAM and the custom peripheral subsystem through a memory-mapped bus interface. The peripheral subsystem integrates GPIO, Timer, PWM, and UART modules, providing programmable hardware functionality while keeping the overall design modular and scalable.
 
 ---
 
