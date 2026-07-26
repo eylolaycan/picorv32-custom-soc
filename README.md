@@ -19,7 +19,7 @@ The complete physical implementation was performed using OpenLane with the SKY13
 ## System Architecture Diagram
 
 <p align="center">
-  <img src="pictures/Diagram.png" width="900">
+  <img src="pictures/Diagram.png" width="400">
 </p>
 
 The following diagram illustrates the hierarchical organization of the custom SoC. The PicoRV32 processor communicates with the Simple RAM and the custom peripheral subsystem through a memory-mapped bus interface. The peripheral subsystem integrates GPIO, Timer, PWM, and UART modules, providing programmable hardware functionality while keeping the overall design modular and scalable.
