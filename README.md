@@ -33,28 +33,6 @@ The design integrates a set of memory-mapped peripherals, executes bare-metal fi
 
 ---
 
-## Architecture
-
-<p align="center">
-
-```text
-                    PicoRV32
-                        │
-             Native Memory Interface
-                        │
-        ┌───────────────┴───────────────┐
-        │                               │
-   Internal RAM                 Peripheral Bus
-                                        │
-             ┌──────────┬──────────┬──────────┐
-             │          │          │          │
-           GPIO       Timer       PWM      UART TX
-```
-
-</p>
-
----
-
 ## Repository Structure
 
 ```text
@@ -79,47 +57,6 @@ picorv32_custom/
 | `0x30000008` | Timer |
 | `0x30000018` | PWM |
 | `0x30000024` | UART |
-
----
-
-## Design Flow
-
-```text
-RTL Design
-     │
-     ▼
-RTL Simulation
-     │
-     ▼
-Peripheral Verification
-     │
-     ▼
-SoC Integration
-     │
-     ▼
-Bare-metal Firmware
-     │
-     ▼
-Logic Synthesis
-     │
-     ▼
-Floorplanning
-     │
-     ▼
-Placement
-     │
-     ▼
-Clock Tree Synthesis
-     │
-     ▼
-Routing
-     │
-     ▼
-Static Timing Analysis
-     │
-     ▼
-Final GDSII
-```
 
 ---
 
